@@ -14,6 +14,7 @@
 		3FDF51301CDA6F8200006CF2 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDF512E1CDA6F8200006CF2 /* Fabric.framework */; settings = {ASSET_TAGS = (); }; };
 		3FDF51311CDA6F8200006CF2 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDF512F1CDA6F8200006CF2 /* Crashlytics.framework */; settings = {ASSET_TAGS = (); }; };
 		3FDF51331CDA70BC00006CF2 /* GameAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDF51321CDA70BC00006CF2 /* GameAnalytics.framework */; settings = {ASSET_TAGS = (); }; };
+		3FDF51351CDA86C300006CF2 /* App-Icons in Resources */ = {isa = PBXBuildFile; fileRef = 3FDF51341CDA86C300006CF2 /* App-Icons */; settings = {ASSET_TAGS = (); }; };
 		7B3E90961952C5C80045F090 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3E90951952C5C80045F090 /* AppDelegate.swift */; };
 		7B3E909A1952C5C80045F090 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3E90991952C5C80045F090 /* GameScene.swift */; };
 		7B3E909C1952C5C80045F090 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3E909B1952C5C80045F090 /* GameViewController.swift */; };
@@ -56,6 +57,7 @@
 		3FDF512E1CDA6F8200006CF2 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		3FDF512F1CDA6F8200006CF2 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		3FDF51321CDA70BC00006CF2 /* GameAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GameAnalytics.framework; sourceTree = "<group>"; };
+		3FDF51341CDA86C300006CF2 /* App-Icons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "App-Icons"; sourceTree = "<group>"; };
 		7B3E90901952C5C80045F090 /* CookieCrunch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookieCrunch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B3E90941952C5C80045F090 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B3E90951952C5C80045F090 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				35736CDF1991307600D1F1C9 /* Chain.swift */,
 				3FDF51271CDA619100006CF2 /* Tile.swift */,
 				35736D1819913B8600D1F1C9 /* Grid.atlas */,
+				3FDF51341CDA86C300006CF2 /* App-Icons */,
 				35736D16199132F300D1F1C9 /* Sprites.atlas */,
 				7B3E909D1952C5C80045F090 /* Main.storyboard */,
 				7B3E90A01952C5C80045F090 /* Images.xcassets */,
@@ -286,6 +289,7 @@
 				7B3E90A11952C5C80045F090 /* Images.xcassets in Resources */,
 				7B3E90D91953276F0045F090 /* Drip.wav in Resources */,
 				7B3E90DB1953276F0045F090 /* Ka-Ching.wav in Resources */,
+				3FDF51351CDA86C300006CF2 /* App-Icons in Resources */,
 				7B3E90C81952FB390045F090 /* Level_2.json in Resources */,
 				7B3E90C91952FB390045F090 /* Level_3.json in Resources */,
 				7B3E90DC1953276F0045F090 /* Mining by Moonlight.mp3 in Resources */,
