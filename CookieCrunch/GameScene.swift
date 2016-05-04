@@ -12,27 +12,34 @@ class GameScene: SKScene {
   // This is marked as ! because it will not initially have a value, but pretty
   // soon after the GameScene is created it will be given a Level object, and
   // from then on it will always have one (it will never be nil again).
+    
   var level: Level!
 
   // The scene handles touches. If it recognizes that the user makes a swipe,
   // it will call this swipe handler. This is how it communicates back to the
   // ViewController that a swap needs to take place. You could also use a
   // delegate for this.
+    
   var swipeHandler: ((Swap) -> ())?
 
   let TileWidth: CGFloat = 32.0
   let TileHeight: CGFloat = 36.0
 
   let gameLayer = SKNode()
+    
   let cookiesLayer = SKNode()
+  
   let tilesLayer = SKNode()
+    
   let cropLayer = SKCropNode()
+    
   let maskLayer = SKNode()
 
   // The column and row numbers of the cookie that the player first touched
   // when he started his swipe movement. These are marked ? because they may
   // become nil (meaning no swipe is in progress).
   var swipeFromColumn: Int?
+    
   var swipeFromRow: Int?
 
   // Sprite that is drawn on top of the cookie that the player is trying to swap.
@@ -40,9 +47,13 @@ class GameScene: SKScene {
 
   // Pre-load the resources
   let swapSound = SKAction.playSoundFileNamed("Chomp.wav", waitForCompletion: false)
+    
   let invalidSwapSound = SKAction.playSoundFileNamed("Error.wav", waitForCompletion: false)
+    
   let matchSound = SKAction.playSoundFileNamed("Ka-Ching.wav", waitForCompletion: false)
+    
   let fallingCookieSound = SKAction.playSoundFileNamed("Scrape.wav", waitForCompletion: false)
+    
   let addCookieSound = SKAction.playSoundFileNamed("Drip.wav", waitForCompletion: false)
 
   // MARK: Game Setup
@@ -52,16 +63,19 @@ class GameScene: SKScene {
 
   override init(size: CGSize) {
     super.init(size: size)
+    
     anchorPoint = CGPoint(x: 0.5, y: 0.5)
 
     // Put an image on the background. Because the scene's anchorPoint is
     // (0.5, 0.5), the background image will always be centered on the screen.
     let background = SKSpriteNode(imageNamed: "Background")
+    
     addChild(background)
 
     // Add a new node that is the container for all other layers on the playing
     // field. This gameLayer is also centered in the screen.
     gameLayer.hidden = true
+    
     addChild(gameLayer)
 
     let layerPosition = CGPoint(
@@ -100,11 +114,14 @@ class GameScene: SKScene {
       let sprite = SKSpriteNode(imageNamed: cookie.cookieType.spriteName)
       sprite.position = pointForColumn(cookie.column, row:cookie.row)
       cookiesLayer.addChild(sprite)
+        
       cookie.sprite = sprite
 
       // Give each cookie sprite a small, random delay. Then fade them in.
       sprite.alpha = 0
+        
       sprite.xScale = 0.5
+        
       sprite.yScale = 0.5
 
       sprite.runAction(
